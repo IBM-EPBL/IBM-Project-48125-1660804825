@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Plasma Donor Application</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<style>
+                                  
+                                   .login{
+                                    top: 20%;
+                                    }
+                                   .big1{
+		margin-top:40px;
+		line-height:50px;
+		font-size:50px;
+		color:#ff0000;
+		}
+                                   .ext{
+		margin-top:25px;
+		line-height:40px;
+		}
+                                   .ext1{
+		margin-top:40px;
+		line-height:50px;
+		font-size:40px;
+		color:#800080;
+		}  
+</style>
+</head>
+
+<body>
+<div class="header">
+<center><div class="big1">Plasma Donor Application</div><br><br><br>
+	<div class="ext1">Request Form</div><br><br><br>
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('requested')}}"method="post">
+		<center><select name="bloodgroup">
+					  <option value="select" selected>Choose your blood group</option>
+					  <option value="O Positive">O Positive</option>
+					  <option value="A Positive">A Positive</option>
+					  <option value="B Positive">B Positive</option>
+					  <option value="AB Positive">AB Positive</option>
+					  <option value="O Negative">O Negative</option>
+					  <option value="A Negative">A Negative</option>
+					  <option value="B Negative">B Negative</option>
+					  <option value="AB Negative">AB Negative</option>
+		</select>
+		<a href="Success.html"><input type="button"onclick="href='Success.html';" value="Submit for Request"></a>
+    </form>
+
+
+ <br><br>
+<div style="color:black">
+ </div>
+
+ </div>
+
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Plasma Donar Application</title>
+ <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of  Donors</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<style>
+                                  .big1{
+		margin-top:40px;
+		line-height:50px;
+		font-size:50px;
+		color:#ff0000;
+		}
+		.big{
+		top:70;
+		background-color:lightblue;
+		margin-top:80px;
+		margin-left:550px;
+		margin-right:550px;
+		height:200px;
+		border-radius: 25px;
+		border: 3px solid #4a77d4;
+		box-shadow: 6px 8px 4px grey;
+		text-align:center;
+		}
+		.row{
+		
+		height:150px;
+		
+		}
+		.col{
+			margin:10px;
+			margin-left:50px;	
+			margin-right:50px;
+			border-radius: 25px;
+			border: 1px solid #4a77d4;
+			box-shadow: 0px 8px 4px grey;
+			text-align:center;
+		}
+		.ext{
+		margin-top:25px;
+		line-height:40px;
+		}
+		.ext1{
+		margin-top:40px;
+		line-height:50px;
+		font-size:40px;
+		color:#800080;
+		}  
+</style>
+<body>
+
+<div class="container-fluid">
+<div class="header">
+<div class="big1"><center><b>Plasma Donar Application</b></center></div>
+</div>
+  <div class="small">
+    <div class="box">
+		<div class="ext1"><font size="20px"></font><br><b>Available Donors</b></div>
+	</div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col" >
+		<div class="ext">5<br><b>O Positive</b></div>
+	</div>
+    <div class="col" >
+		<div class="ext">3<br><b>A Positive</b></div>
+	</div>
+    <div class="col" >
+		<div class="ext">8<br><b>B Positive</b></div>
+	</div>
+    <div class="col" >
+		<div class="ext">4<br><b>AB Positive</b></div>
+	</div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col" >
+		<div class="ext">6<br><b>O Negative</b></div>
+	</div>
+    <div class="col" >
+		<div class="ext">7<br><b>A Negative</b></div>
+	</div>
+    <div class="col" >
+		<div class="ext">3<br><b>B Negative</b></div>
+	</div>
+    <div class="col" >
+		<div class="ext">5<br><b>AB Negative</b></div>
+	</div>
+  </div>
+</div>
+<br><br><center>
+  <button class="btn btn-primary float-right" 
+    onclick="window.location.href = 'Request.html';">
+        Request
+    </button>
+</center>
+</body>
+</html>
